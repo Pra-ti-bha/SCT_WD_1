@@ -1,1 +1,32 @@
 # SCT_WD_1
+</nav>
+  <main>
+    <section>
+      <h1 style="font-size: 2.5rem; font-weight: 700; color: var(--color-accent); margin-bottom: 1rem;">
+        Welcome to DevLibrary
+      </h1>
+      <p>
+        Explore a high-end component library designed to build trust through clarity and good design.
+        Scroll down to see the navigation style change.
+      </p>
+    </section>
+  </main>
+  <script>
+    // Add scroll event listener to toggle the nav background and shadow
+    (() => {
+      const nav = document.getElementById('navbar');
+      const scrollThreshold = 10; // px
+      function onScroll() {
+        if(window.scrollY > scrollThreshold) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      window.addEventListener('scroll', onScroll);
+      // Initial check
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
